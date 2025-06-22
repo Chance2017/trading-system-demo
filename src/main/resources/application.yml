@@ -1,0 +1,18 @@
+server:
+  port: 1515
+
+spring:
+  profiles:
+    active: local
+
+springdoc:
+  swagger-ui:
+    path: /
+    operations-sorter: method
+    tags-sorter: alpha
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
