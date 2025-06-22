@@ -12,14 +12,12 @@ public class SwaggerConfiguration {
 
     @Bean
     public OpenAPI openAPI() {
-        Server server = new Server();
-        server.setUrl("https://class101.nuaa.edu.cn/");
         return new OpenAPI().info(apiInfo());
     }
 
     private Info apiInfo() {
-        return new Info().title("NUAA 良师益友评选赛后台接口")
-                .description("南京航空航天大学 第N届良师益友评选赛后台接口")
+        return new Info().title("Trading System APIs")
+                .description("Trading System Demo")
                 .contact(new Contact().name("Chance").email("zzhchance@163.com"))
                 .version("1.0.0");
     }
